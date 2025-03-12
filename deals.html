@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store | Dynamic & Animated</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE E-Store</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">📱 Electronics</a></li>
+                        <li><a href="#">👗 Fashion</a></li>
+                        <li><a href="#">🏠 Home</a></li>
+                        <li><a href="#">📚 Books</a></li>
+                    </ul>
+                </li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="cta-btn">Shop Now</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <section class="deals-section">
+        <h2 class="deals-title">🔥 Exclusive Deals & Discounts</h2>
+
+        <div class="deal-container">
+            <div class="deal-card">
+                <span class="deal-badge hot-deal">HOT DEAL</span>
+                <img src="placeholder.jpg" alt="Deal Product" class="deal-img">
+                <h3>Wireless Headphones</h3>
+                <p class="deal-discount">50% OFF</p>
+                <p class="deal-price">Rs 499 /-</p>
+                <p class="deal-timer" id="timer1">⏳ Time Left: 00:00:00</p>
+            </div>
+
+            <div class="deal-card">
+                <span class="deal-badge limited-time">LIMITED TIME</span>
+                <img src="placeholder.jpg" alt="Deal Product" class="deal-img">
+                <h3>Smart Watch</h3>
+                <p class="deal-discount">30% OFF</p>
+                <p class="deal-price">Rs 1,999 /-</p>
+                <p class="deal-timer" id="timer2">⏳ Time Left: 00:00:00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <p>Follow us</p>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    
+        <hr> <!-- Thin separator line -->
+    
+        <div class="footer-bottom">
+            <div class="left-links">
+                <p>E-Store</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Support</a>
+            </div>
+    
+            <div class="right-links">
+                <a href="#">Help</a>
+                <select>
+                    <option>English - United States</option>
+                    <option>English - UK</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

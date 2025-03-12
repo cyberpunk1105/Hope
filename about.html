@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | HOPE E-Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">HOPE E-Store</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">📱 Electronics</a></li>
+                        <li><a href="#">👗 Fashion</a></li>
+                        <li><a href="#">🏠 Home</a></li>
+                        <li><a href="#">📚 Books</a></li>
+                    </ul>
+                </li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="cta-btn">Shop Now</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate-fade">
+            <h1>About <span>HOPE E-Store</span></h1>
+            <p>Bringing convenience, quality, and the best deals to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-card flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Who We Are</h2>
+                        <p>A community-driven platform fostering connections and growth.</p>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Our Mission</h2>
+                        <p>To make shopping easier, affordable, and accessible to everyone.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>What We Offer</h2>
+                        <p>Curated collections of the best products, just for you.</p>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Our Promise</h2>
+                        <p>Quality products, seamless shopping experience, and top-notch support.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-card flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <h2>Meet the Creator</h2>
+                        <p>The mastermind behind this platform.</p>
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>ILAMPOORANAN T K</h2>
+                        <p>A passionate innovator bringing tech-driven solutions to e-commerce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <h2>What People Say About Us</h2>
+    
+        <div class="testimonial-wrapper">
+            <!-- Row 1: Moves Left to Right -->
+            <div class="testimonial-row scroll-move right">
+                <div class="testimonial-box">
+                    <p class="comment-user">John Doe</p>
+                    <p class="comment-text">"Absolutely love this platform! Great deals and seamless shopping experience."</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Jane Smith</p>
+                    <p class="comment-text">"A game-changer in online shopping. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Rahul Kumar</p>
+                    <p class="comment-text">"Fantastic customer service and excellent product variety!"</p>
+                </div>
+            </div>
+    
+            <!-- Row 2: Moves Right to Left -->
+            <div class="testimonial-row scroll-move left">
+                <div class="testimonial-box">
+                    <p class="comment-user">Amit Patel</p>
+                    <p class="comment-text">"A seamless experience. Love the discounts and offers!"</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Sarah Lee</p>
+                    <p class="comment-text">"Beautiful UI and easy navigation. Shopping made simple!"</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Vikram Singh</p>
+                    <p class="comment-text">"Highly recommend this e-store for fast deliveries!"</p>
+                </div>
+            </div>
+    
+            <!-- Row 3: Moves Left to Right -->
+            <div class="testimonial-row scroll-move right">
+                <div class="testimonial-box">
+                    <p class="comment-user">Neha Sharma</p>
+                    <p class="comment-text">"Great quality products, very satisfied!"</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Ryan Smith</p>
+                    <p class="comment-text">"Will definitely recommend this e-store to friends!"</p>
+                </div>
+                <div class="testimonial-box">
+                    <p class="comment-user">Pooja R</p>
+                    <p class="comment-text">"Secure payments and fast shipping, loved it!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <p>Follow us</p>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="left-links">
+                <p>E-Store</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="right-links">
+                <a href="#">Help</a>
+                <select>
+                    <option>English - United States</option>
+                    <option>English - UK</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

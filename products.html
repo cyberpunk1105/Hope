@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store | Dynamic & Animated</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE E-Store</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">📱 Electronics</a></li>
+                        <li><a href="#">👗 Fashion</a></li>
+                        <li><a href="#">🏠 Home</a></li>
+                        <li><a href="#">📚 Books</a></li>
+                    </ul>
+                </li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="cta-btn">Shop Now</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+    <main class="products-page">
+        <!-- ✅ Filter Section -->
+        <section class="products-filter">
+            <div class="filter-box">
+                <input type="text" placeholder="🔍 Search for products..." class="filter-search">
+                <select class="filter-category">
+                    <option>All Categories</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Home</option>
+                    <option>Books</option>
+                </select>
+                <select class="filter-price">
+                    <option>Sort By: Popularity</option>
+                    <option>Sort By: Price (Low to High)</option>
+                    <option>Sort By: Price (High to Low)</option>
+                    <option>Sort By: New Arrivals</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- ✅ Product Display Section -->
+        <section class="products-container">
+            <div class="product-card">
+                <div class="product-image"><img src="#" alt="Product"></div>
+                <div class="product-details">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-description">Short product description.</p>
+                    <span class="product-price">Rs 999 /-</span>
+                    <button class="product-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image"><img src="#" alt="Product"></div>
+                <div class="product-details">
+                    <h3 class="product-name">Product Name</h3>
+                    <p class="product-description">Short product description.</p>
+                    <span class="product-price">Rs 799 /-</span>
+                    <button class="product-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <p>Follow us</p>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-x-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    
+        <hr> <!-- Thin separator line -->
+    
+        <div class="footer-bottom">
+            <div class="left-links">
+                <p>E-Store</p>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Support</a>
+            </div>
+    
+            <div class="right-links">
+                <a href="#">Help</a>
+                <select>
+                    <option>English - United States</option>
+                    <option>English - UK</option>
+                    <option>Hindi</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    

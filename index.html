@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Store | Dynamic & Animated</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">HOPE E-Store</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">📱 Electronics</a></li>
+                        <li><a href="#">👗 Fashion</a></li>
+                        <li><a href="#">🏠 Home</a></li>
+                        <li><a href="#">📚 Books</a></li>
+                    </ul>
+                </li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="cta-btn">Shop Now</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content animate-fade">
+            <h1>Discover the Best <span>Deals</span></h1>
+            <div class = "temp">Your one-stop shop for electronics, fashion, and more!</div>
+            <div class="search-box">
+                <input type="text" placeholder="Search for products...">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories animate-slide">
+        <h2>Shop by Category</h2>
+        <div class="category-container">
+            <div class="category">📱 Electronics</div>
+            <div class="category">👗 Fashion</div>
+            <div class="category">🏠 Home</div>
+            <div class="category">📚 Books</div>
+        </div>
+    </section>
+
+    <section class="slider animate-fade">
+        <div class="slider-container">
+            <div class="slide fade">
+                <img src="Books.jpg" alt="Books">
+            </div>
+            <div class="slide fade">
+                <img src="Decor.jpg" alt="Decor">
+            </div>
+            <div class="slide fade">
+                <img src="Headphones.jpg" alt="Headphones">
+            </div>
+            <div class="slide fade">
+                <img src="Shirt.jpg" alt="Shirt">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Featured Products (Looping Slider) -->
+<section class="products">
+    <h2>Featured Products</h2>
+    <div class="product-carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="product-container">
+            <div class="product-slide">
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Headphones.jpg" alt="Wireless Headphones">
+                    </div>
+                    <h3>Wireless Headphones</h3>
+                    <p>Experience high-quality sound.</p>
+                    <span class="price">Rs 999 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Books.jpg" alt="Best-Selling Books">
+                    </div>
+                    <h3>Best-Selling Books</h3>
+                    <p>Expand your knowledge.</p>
+                    <span class="price">Rs 299 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Shirt.jpg" alt="Trendy Fashion Wear">
+                    </div>
+                    <h3>Trendy Fashion Wear</h3>
+                    <p>Stay stylish with new trends.</p>
+                    <span class="price">Rs 799 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <img src="Decor.jpg" alt="Modern Home Decor">
+                    </div>
+                    <h3>Modern Home Decor</h3>
+                    <p>Make your home elegant.</p>
+                    <span class="price">Rs 599 /-</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
+
+        
+    
+<!-- ✅ Minimal Footer with Matching Color Palette -->
+<footer>
+    <div class="footer-top">
+        <p>Follow us</p>
+        <div class="social-icons">
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-x-twitter"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+    </div>
+
+    <hr> <!-- Thin separator line -->
+
+    <div class="footer-bottom">
+        <div class="left-links">
+            <p>E-Store</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
+        </div>
+
+        <div class="right-links">
+            <a href="#">Help</a>
+            <select>
+                <option>English - United States</option>
+                <option>English - UK</option>
+                <option>Hindi</option>
+                <option>Spanish</option>
+            </select>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

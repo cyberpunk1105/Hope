@@ -1,20 +1,19 @@
-// ✅ Sticky Navbar Effect
+
 window.addEventListener("scroll", function () {
     let header = document.querySelector("header");
     header.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-// ✅ Mobile Menu Toggle
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
 }
 
-// ✅ Remove Loading Screen
+
 window.addEventListener("load", function () {
     document.querySelector(".loading-screen").style.display = "none";
 });
 
-// ✅ Smooth Scroll Animation
+
 document.addEventListener("scroll", function () {
     document.querySelectorAll(".animate-text").forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 50) {
@@ -24,7 +23,7 @@ document.addEventListener("scroll", function () {
     });
 });
 
-// ✅ Button Click Animation
+
 document.querySelectorAll("button").forEach(button => {
     button.addEventListener("click", function () {
         button.style.transform = "scale(0.9)";
@@ -32,7 +31,7 @@ document.querySelectorAll("button").forEach(button => {
     });
 });
 
-// ✅ Filter Functionality
+
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector(".filter-search");
     const categoryFilter = document.querySelector(".filter-category");
@@ -58,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     categoryFilter.addEventListener("change", filterProducts);
 });
 
-// ✅ Dropdown Menu Toggle on Click
+
 document.addEventListener("DOMContentLoaded", function () {
     let categoryDropdown = document.querySelector(".dropdown > a");
     let dropdownMenu = document.querySelector(".dropdown-menu");
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// ✅ Banner Slider (Auto + Manual)
+
 let bannerIndex = 0;
 function showSlides() {
     let slides = document.querySelectorAll(".slide");
@@ -100,24 +99,24 @@ function changeSlide(n) {
 }
 document.addEventListener("DOMContentLoaded", showSlides);
 
-// ✅ Product Slider (Only Moves on Arrow Click)
+
 document.addEventListener("DOMContentLoaded", function () {
     let productContainer = document.querySelector(".product-container");
     let prevBtn = document.querySelector(".carousel-btn.prev");
     let nextBtn = document.querySelector(".carousel-btn.next");
 
-    // Ensure the product container exists before adding event listeners
+    
     if (productContainer && prevBtn && nextBtn) {
         prevBtn.addEventListener("click", function () {
             productContainer.scrollBy({
-                left: -300, // Adjust scroll amount
+                left: -300, 
                 behavior: "smooth"
             });
         });
 
         nextBtn.addEventListener("click", function () {
             productContainer.scrollBy({
-                left: 300, // Adjust scroll amount
+                left: 300, 
                 behavior: "smooth"
             });
         });
@@ -128,15 +127,15 @@ document.addEventListener("scroll", function () {
     let scrollPosition = window.scrollY;
 
     document.querySelectorAll(".scroll-move").forEach((row, index) => {
-        let speed = index % 2 === 0 ? 1.5 : -1.5; // Odd rows move right, even rows move left
-        let moveAmount = (scrollPosition * speed) / 20; // Adjust movement speed
+        let speed = index % 2 === 0 ? 1.5 : -1.5; 
+        let moveAmount = (scrollPosition * speed) / 20; 
 
         row.style.transform = `translateX(${moveAmount}px)`;
     });
 });
 
 
-// ✅ Countdown Timer for Deals
+
 function startCountdown(id, duration) {
     let display = document.getElementById(id);
     let countdown = duration;
@@ -157,8 +156,8 @@ function startCountdown(id, duration) {
     updateTimer();
 }
 
-// ✅ Initialize Countdown Timers
+
 document.addEventListener("DOMContentLoaded", function () {
-    startCountdown("timer1", 3600);  // 1 Hour Timer
-    startCountdown("timer2", 7200);  // 2 Hour Timer
+    startCountdown("timer1", 3600);  
+    startCountdown("timer2", 7200);  
 });

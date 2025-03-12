@@ -41,7 +41,7 @@ header {
     100% { text-shadow: 0 0 20px #ffcc00; }
 }
 
-/* Navbar Links */
+
 /* Header Navigation */
 .nav-links {
     list-style: none;
@@ -110,15 +110,15 @@ header {
 }
 
 /* CTA Button */
-/* Remove underline hover effect for "Shop Now" */
+
 .cta-btn::after {
-    display: none !important; /* Completely disable hover bar */
+    display: none !important;
 }
 
-/* Shop Now Button - No Hover Color Change */
+/* Shop Now Button */
 .cta-btn {
-    background: #ffcc00 !important; /* Ensure it stays yellow */
-    color: white !important; /* Ensure text stays black */
+    background: #ffcc00 !important; 
+    color: white !important; 
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
@@ -128,9 +128,9 @@ header {
 
 /* Ensure no color change on hover */
 .cta-btn:hover {
-    background: #ffcc00 !important; /* Keep the same yellow */
-    color: black !important; /* Keep text black */
-    transform: scale(1.1); /* Only apply scaling effect */
+    background: #ffcc00 !important; 
+    color: black !important; 
+    transform: scale(1.1); 
 }
 
 
@@ -220,8 +220,8 @@ header.scrolled {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 40vh; /* Reduced height */
-    margin-bottom: 20px; /* Reduce space below */
+    height: 40vh; 
+    margin-bottom: 20px; 
 }
 
 .hero-content {
@@ -231,7 +231,7 @@ header.scrolled {
 .hero h1 {
     font-size: 52px;
     font-weight: bold;
-    margin-bottom: 30px; /* Reduce space below heading */
+    margin-bottom: 30px; 
 }
 
 .hero h1 span {
@@ -241,32 +241,32 @@ header.scrolled {
 /* Categories */
 .categories {
     text-align: center;
-    margin: 20px 0; /* Reduce top and bottom margins */
+    margin: 20px 0; 
 }
 
-/* ✅ Make Categories Bigger & More Box-Like */
+/*  Make Categories Bigger & More Box-Like */
 .category-container {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; 
 }
 
 .category {
     background: #14213D;
-    padding: 20px 40px; /* Increased padding to make it bigger */
-    border-radius: 10px; /* Less rounded for a box effect */
-    font-size: 18px; /* Increase text size */
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    font-size: 18px; 
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 160px; /* Ensures all boxes are uniform */
-    min-height: 80px; /* Makes it a taller box */
+    min-width: 160px; 
+    min-height: 80px; 
     cursor: pointer;
     transition: transform 0.3s, background 0.3s ease-in-out;
 }
 
-/* ✅ Hover Effect */
+/*  Hover Effect */
 .category:hover {
     background: #ffcc00;
     color: black;
@@ -283,11 +283,11 @@ header.scrolled {
 
 .products h2 {
     margin-bottom: 30px;  
-    font-size: 25px; /* Adjust font size if needed */
+    font-size: 25px; 
 }
 
 /* Product Carousel */
-/* ✅ Fix Product Slider */
+
 .product-carousel {
     display: flex;
     align-items: center;
@@ -313,7 +313,7 @@ header.scrolled {
     display: none;
 }
 
-/* ✅ Fix Arrows */
+/*  Fix Arrows */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -336,7 +336,7 @@ header.scrolled {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* ✅ Fix Banner Slider */
+/*  Fix Banner Slider */
 .slide img {
     width: 100%;
     height: 300px;
@@ -405,7 +405,7 @@ header.scrolled {
 }
 
 /* Scrollable Product Section */
-/* Scroll Wrapper */
+
 .scroll-wrapper {
     display: flex;
     align-items: center;
@@ -439,7 +439,7 @@ header.scrolled {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Fix Image Size */
+
 .product-image {
     width: 100%;
     height: 200px;
@@ -490,20 +490,20 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* ✅ Footer Styling - Dark Theme */
+/
 footer {
-    background: #0D1B2A; /* Match website color */
+    background: #0D1B2A; ]
     color: #c5cbd5;
     font-size: 14px;
     padding: 20px 40px;
     text-align: left;
     width: 100%;
-    max-width: 1200px; /* Prevents overflow */
-    margin: auto; /* Centers footer properly */
+    max-width: 1200px; 
+    margin: auto;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* ✅ Follow Us Section */
+
 .footer-top {
     display: flex;
     align-items: center;
@@ -513,7 +513,7 @@ footer {
     color: #ffffff;
 }
 
-/* ✅ Social Icons */
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -530,7 +530,7 @@ footer {
     color: #ffcc00;
 }
 
-/* ✅ Thin Separator */
+
 hr {
     border: none;
     height: 1px;
@@ -538,7 +538,7 @@ hr {
     margin: 10px 0;
 }
 
-/* ✅ Footer Bottom Layout */
+/*  Footer Bottom Layout */
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -547,7 +547,7 @@ hr {
     width: 100%;
 }
 
-/* ✅ Left Links */
+/*  Left Links */
 .left-links {
     display: flex;
     gap: 15px;
@@ -565,7 +565,7 @@ hr {
     color: #ffcc00;
 }
 
-/* ✅ Right Links (Help & Language Selection) */
+/*  Right Links (Help & Language Selection) */
 .right-links {
     display: flex;
     align-items: center;
@@ -581,13 +581,13 @@ hr {
     cursor: pointer;
 }
 
-/* ✅ Prevent Footer Overflow */
+/*  Prevent Footer Overflow */
 .container {
     max-width: 1200px; /* Ensures footer fits inside */
     margin: auto;
 }
 
-/* ✅ Fix Mobile Issues */
+/*  Fix Mobile Issues */
 @media (max-width: 768px) {
     .footer-bottom {
         flex-direction: column;
@@ -656,8 +656,8 @@ hr {
 /* Banner Container */
 .slider {
     position: relative;
-    max-width: 90%; /* Makes it responsive */
-    height: 400px; /* Set a fixed height */
+    max-width: 90%;    
+    height: 400px; 
     margin: 30px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -666,9 +666,9 @@ hr {
 
 /* Ensure All Images Fit the Same Size */
 .slide img {
-    width: 100%; /* Stretch to fill the width */
-    height: 100%; /* Stretch to fill the height */
-    object-fit: cover; /* Crop to fit while maintaining aspect ratio */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
 }
 
@@ -760,20 +760,20 @@ hr {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px; /* Increased spacing to prevent overlap */
+    gap: 40px; 
     max-width: 1200px;
     margin: auto;
 }
 
-/* Flip Animation - Prevents Overlapping */
+/* Flip Animation */
 .flip-box {
     background-color: transparent;
     width: 100%;
-    max-width: 320px; /* Slightly larger for better readability */
+    max-width: 320px;
     height: 200px;
-    perspective: 1200px; /* Increased for smoother flip effect */
+    perspective: 1200px; =
     margin: 20px;
-    position: relative; /* Ensures isolated flipping */
+    position: relative; 
 }
 
 /* Inner Box Rotation */
@@ -786,10 +786,10 @@ hr {
     transform-style: preserve-3d;
 }
 
-/* Prevent nearby overlaps */
+
 .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-    z-index: 10; /* Ensures flipping card stays on top */
+    z-index: 10; 
 }
 
 /* Front & Back Styling */
@@ -873,14 +873,14 @@ hr {
     color: #c5cbd5;
 }
 
-/* ✅ Unique Styling for Products Page */
+/*  Unique Styling for Products Page */
 
 body {
     background: linear-gradient(135deg, #0D1B2A, #1B263B);
     color: white;
 }
 
-/* ✅ Product Filter */
+/*  Product Filter */
 .products-filter {
     text-align: center;
     padding: 20px;
@@ -905,7 +905,7 @@ body {
     color: black;
 }
 
-/* ✅ Products Section */
+/*  Products Section */
 .products-container {
     display: flex;
     flex-wrap: wrap;
@@ -914,7 +914,7 @@ body {
     padding: 20px;
 }
 
-/* ✅ Product Card */
+/*  Product Card */
 .product-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
@@ -966,7 +966,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ✅ Responsive Design */
+/*  Responsive Design */
 @media (max-width: 768px) {
     .filter-box {
         flex-direction: column;
@@ -989,7 +989,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* ✅ Deals Container */
+/*  Deals Container */
 .deal-container {
     display: flex;
     flex-wrap: wrap;
@@ -997,7 +997,7 @@ body {
     gap: 20px;
 }
 
-/* ✅ Deal Card */
+/*  Deal Card */
 .deal-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
@@ -1008,16 +1008,16 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-/* ✅ Deal Card Hover Effect */
+/*  Deal Card Hover Effect */
 .deal-card:hover {
     transform: scale(1.05);
     box-shadow: 0px 5px 10px rgba(255, 204, 0, 0.5);
 }
 
-/* ✅ Image Styling */
+/*  Image Styling */
 
 
-/* ✅ Deal Badges */
+/*  Deal Badges */
 .deal-badge {
     position: absolute;
     top: 10px;
@@ -1031,12 +1031,12 @@ body {
     z-index: 2; /* Ensures it stays above the image */
 }
 
-/* ✅ Create Space Below Badge */
+/*  Create Space Below Badge */
 .deal-card h3 {
     margin-top: 30px; /* Push title down to avoid overlap */
 }
 
-/* ✅ Adjust Badge Variants */
+/*  Adjust Badge Variants */
 .hot-deal {
     background: #ff5733;
 }
@@ -1046,7 +1046,7 @@ body {
     color: black;
 }
 
-/* ✅ Ensure Image Doesn't Overlap */
+/*  Ensure Image Doesn't Overlap */
 .deal-img {
     width: 100%;
     height: 180px;
@@ -1054,7 +1054,7 @@ body {
     border-radius: 5px;
     margin-top: 20px; /* Adds spacing */
 }
-/* ✅ Responsive Layout */
+/*  Responsive Layout */
 @media (max-width: 768px) {
     .deal-container {
         flex-direction: column;
